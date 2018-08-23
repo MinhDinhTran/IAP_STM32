@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"iap_stm32\stm32f1xx_hal_msp.o"
+"iap_stm32\stm32f1xx_it.o"
+"iap_stm32\main.o"
+"iap_stm32\flash_if.o"
+"iap_stm32\menu.o"
+"iap_stm32\common.o"
+"iap_stm32\ymodem.o"
+"iap_stm32\startup_stm32f103xe.o"
+"iap_stm32\system_stm32f1xx.o"
+"iap_stm32\stm32f1xx_hal_dma.o"
+"iap_stm32\stm32f1xx_hal_cortex.o"
+"iap_stm32\stm32f1xx_hal_tim_ex.o"
+"iap_stm32\stm32f1xx_hal_tim.o"
+"iap_stm32\stm32f1xx_hal_rcc_ex.o"
+"iap_stm32\stm32f1xx_hal.o"
+"iap_stm32\stm32f1xx_hal_pwr.o"
+"iap_stm32\stm32f1xx_hal_flash.o"
+"iap_stm32\stm32f1xx_hal_flash_ex.o"
+"iap_stm32\stm32f1xx_hal_uart.o"
+"iap_stm32\stm32f1xx_hal_rcc.o"
+"iap_stm32\stm32f1xx_hal_gpio.o"
+--library_type=microlib --strict --scatter "IAP_STM32\IAP_STM32.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IAP_STM32.map" -o IAP_STM32\IAP_STM32.axf
